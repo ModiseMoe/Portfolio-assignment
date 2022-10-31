@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ModiseMoe.github.io/Portfolio-assignment",
   "name": "assignment",
   "version": "0.1.0",
   "private": true,
@@ -6,6 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-Pages -d build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -21,6 +24,7 @@
   },
   "devDependencies": {
     "eslint": "8.26.0",
-    "eslint-config-next": "13.0.0"
+    "eslint-config-next": "13.0.0",
+    "gh-pages": "^4.0.0"
   }
 }
